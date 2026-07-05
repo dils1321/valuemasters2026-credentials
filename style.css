@@ -1,0 +1,280 @@
+:root{
+  --navy-deep:#0A1436;
+  --navy:#0E2158;
+  --blue:#1C86D6;
+  --paper:#F5F7FA;
+  --muted:#6B7688;
+  --ink:#0A1436;
+  --border:#E4E8EF;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  padding:0;
+  background:var(--paper);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  color:var(--ink);
+}
+
+.wrap{
+  max-width:720px;
+  margin:0 auto;
+  padding:56px 20px 80px;
+}
+
+.top-nav{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:40px;
+}
+
+.top-nav img{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+}
+
+.top-nav a{
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.top-nav a:hover{
+  color:var(--blue);
+}
+
+.card{
+  background:#ffffff;
+  border-radius:16px;
+  box-shadow:0 1px 2px rgba(10,20,54,0.06), 0 8px 28px rgba(10,20,54,0.10);
+  overflow:hidden;
+  border:1px solid var(--border);
+}
+
+.card-top{
+  display:flex;
+  padding:32px;
+  gap:26px;
+  border-bottom:1px solid var(--border);
+}
+
+.logo-wrap{
+  width:120px;
+  height:120px;
+  min-width:120px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.logo-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.card-top-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+}
+
+.eyebrow{
+  font-size:11px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--blue);
+  font-weight:700;
+}
+
+.credential-name{
+  font-family:'Fraunces',Georgia,serif;
+  font-size:24px;
+  font-weight:600;
+  color:var(--ink);
+  line-height:1.25;
+  margin:0;
+}
+
+.meta-line{
+  font-size:14.5px;
+  color:var(--navy);
+  font-weight:500;
+}
+
+.meta-line .dot{
+  color:var(--muted);
+  margin:0 7px;
+  font-weight:400;
+}
+
+.name{
+  font-weight:700;
+}
+
+.issuer{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.card-body{
+  padding:28px 32px;
+}
+
+.detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px 24px;
+  margin-bottom:26px;
+}
+
+.detail-item label{
+  display:block;
+  font-size:11px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:4px;
+}
+
+.detail-item span{
+  font-size:14px;
+  color:var(--ink);
+  font-weight:500;
+}
+
+.verified-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:13.5px;
+  color:var(--navy);
+  background:#EFF6FC;
+  border:1px solid #D8EAF7;
+  border-radius:10px;
+  padding:12px 16px;
+  margin-bottom:26px;
+}
+
+.verified-row svg{
+  width:16px;
+  height:16px;
+  stroke:var(--blue);
+  flex-shrink:0;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:600;
+  padding:11px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  cursor:pointer;
+  border:1px solid transparent;
+}
+
+.btn-primary{
+  background:#0A66C2;
+  color:#ffffff;
+}
+
+.btn-primary:hover{
+  background:#004182;
+}
+
+.btn-secondary{
+  background:#ffffff;
+  color:var(--navy);
+  border:1px solid var(--border);
+}
+
+.btn-secondary:hover{
+  border-color:var(--blue);
+  color:var(--blue);
+}
+
+.btn svg{
+  width:16px;
+  height:16px;
+}
+
+.footer-note{
+  text-align:center;
+  font-size:12.5px;
+  color:var(--muted);
+  margin-top:28px;
+}
+
+.footer-note a{
+  color:var(--blue);
+  text-decoration:none;
+}
+
+.index-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-top:24px;
+}
+
+.index-item{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  background:#ffffff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 20px;
+  text-decoration:none;
+  color:inherit;
+}
+
+.index-item:hover{
+  border-color:var(--blue);
+}
+
+.index-item img{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  object-fit:contain;
+}
+
+.index-item-text strong{
+  display:block;
+  font-size:14.5px;
+  color:var(--ink);
+}
+
+.index-item-text span{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.page-title{
+  font-family:'Fraunces',Georgia,serif;
+  font-size:28px;
+  font-weight:600;
+  margin:0 0 6px;
+}
+
+.page-sub{
+  font-size:14.5px;
+  color:var(--muted);
+  margin:0;
+}
